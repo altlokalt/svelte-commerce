@@ -13,8 +13,8 @@ export async function load({ request, locals, parent, cookies }) {
 			server: true,
 			sid: cookies.get('connect.sid')
 		})
-		faqs = res?.data
-		count = res?.count
+		faqs = res?.items
+		count = res?.totalItems
 	} catch (e) {
 		err = e
 	} finally {

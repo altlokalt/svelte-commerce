@@ -41,7 +41,7 @@ function showans(i) {
 								type="button"
 								class="flex w-full cursor-pointer items-start justify-between gap-5 p-5 text-left focus:outline-none"
 								on:click="{() => showans(fx)}">
-								<h5 class="flex-1">{f.question}</h5>
+								<div class="flex-1 font-bold">{@html f.question}</div>
 
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ function showans(i) {
 									viewBox="0 0 24 24"
 									stroke-width="1.5"
 									stroke="currentColor"
-									class="h-6 w-6 transition duration-300
+									class="h-6 w-6 transition duration-300 
 									{show[fx] ? 'text-primary-500 transform rotate-45 transition duration-300' : ''}">
 									<path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15">
 									</path>
