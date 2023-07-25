@@ -6,6 +6,8 @@ let seoProps = {
 	title: `Terms and conditions`,
 	description: `Terms and conditions`
 }
+console.log("from terms and conditions: ", $page.data)
+
 </script>
 
 <SEO {...seoProps} />

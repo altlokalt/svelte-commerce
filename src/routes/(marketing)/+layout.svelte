@@ -4,13 +4,15 @@ import { page } from '$app/stores'
 import { PageTransitions } from '$lib/components'
 import { slide } from 'svelte/transition'
 
+console.log("$page.data", $page.data)
+
 let showFooter = false
 </script>
 
 <div class="h-rem w-full flex-1">
 	<Nav me="{$page.data.me}" cart="{$page.data.cart}" />
 
-	<PageTransitions url="{data.url}">
+	<PageTransitions url="{$page.data.url}">
 		<slot />
 	</PageTransitions>
 
