@@ -41,7 +41,7 @@ function showans(i) {
 								type="button"
 								class="flex w-full cursor-pointer items-start justify-between gap-5 p-5 text-left focus:outline-none"
 								on:click="{() => showans(fx)}">
-								<div class="flex-1 font-bold">{@html f.question}</div>
+								<div class="flex-1">{@html f.question}</div>
 
 								<svg
 									xmlns="http://www.w3.org/2000/svg"

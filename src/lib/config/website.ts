@@ -1,21 +1,21 @@
-import Logo from '$lib/assets/logo.svg'
+import Logo from '$lib/assets/logo.png'
 
 // All bellow data will be replaced by Footer.svelte after the server/store call and saved to cookie
 export const id = '62b00e15c4899dc7b1f78cb1'
 export const address = `#22, Global Village, Rourkela,<br/> Odisha - 769002, India`
 export const description = ''
-export const domain = 'litekart.in'
+export const domain = 'texbab.com'
 export const email = 'hi@litekart.in'
 export const GOOGLE_ANALYTICS_ID = 'G-BG3JKWLYPF'
 export const GOOGLE_CLIENT_ID =
 	'414060469322-n4raqj2rdbjhegvrtdk6mhbdm4sd0oc7.apps.googleusercontent.com'
-export const keywords = 'ecommerce, headless, pwa'
+export const keywords = 'kebab, headless, pwa, food, hotel'
 export const logo = Logo
 export const phone = '+91-8249028220'
-export const websiteLegalName = 'Misiki Technologies LLP'
-export const websiteName = 'Litekart'
-export const saasName = 'Litekart'
-export const saasDomain = 'https://litekart.in'
+export const websiteLegalName = 'texbab AS'
+export const websiteName = 'Texbab'
+export const saasName = 'Texbab'
+export const saasDomain = 'https://texbab.com'
 // All above data will be replaced by Footer.svelte after the server/store call and saved to cookie
 
 // Bellow PWA Settings, can't configure from admin

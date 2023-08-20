@@ -13,7 +13,8 @@ export const fetchBlogs = async ({ origin, storeId, server = false, sid = null }
 			res = await getAPI(`blogs?store=${storeId}`, origin)
 		}
 
-		return res.data || []
+		console.log("log blogs:", res)
+		return res || []
 	} catch (e) {
 		throw error(e.status, e.data?.message || e.message)
 	}
@@ -29,7 +30,7 @@ export const fetchLatestBlogs = async ({ origin, storeId, server = false, sid = 
 			res = await getAPI(`blogs?sort=-updatedAt&limit=10&store=${storeId}`, origin)
 		}
 
-		return res.data || []
+		return res || []
 	} catch (e) {
 		throw error(e.status, e.data?.message || e.message)
 	}
@@ -45,7 +46,7 @@ export const fetchBlog = async ({ origin, id, storeId, server = false, sid = nul
 			res = await getAPI(`blogs/${id}?store=${storeId}`, origin)
 		}
 
-		return res.data || []
+		return res || []
 	} catch (e) {
 		throw error(e.status, e.data?.message || e.message)
 	}

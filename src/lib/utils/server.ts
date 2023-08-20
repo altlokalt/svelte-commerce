@@ -123,11 +123,10 @@ export const getBySid = async (endpoint: string, sid?: any) => {
 }
 
 export const getPocketbase = async (endpoint: string) => {
-	const response = await fetch('https://analytics.minfuel.com/api/' + endpoint)
+	const response = await fetch('https://api.texbab.no/api/collections/' + endpoint)
 	const isJson = response.headers.get('content-type')?.includes('application/json')
 	const res = isJson ? await response.json() : await response.text()
-    // console.log("data from pocketbase:", res.items)
-
+	
 	if (response?.status > 399) {
 		throw { status: response.status, message: response.statusText }
 	} else {
